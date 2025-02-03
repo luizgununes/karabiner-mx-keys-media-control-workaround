@@ -1,0 +1,49 @@
+{
+  "title": "Logitech MX Keys Media Control",
+  "rules": [
+    {
+      "description": "Previous Song",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            },
+            "key_code": "left_arrow"
+          },
+          "to": [
+            {
+              "repeat": true,
+              "key_code": "rewind"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Next Song",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            },
+            "key_code": "right_arrow"
+          },
+          "to": [
+            {
+              "repeat": true,
+              "key_code": "fastforward"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
